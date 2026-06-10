@@ -28,7 +28,7 @@
 </iframe>
 </p>
 <p data-sourcepos="31:1-31:157">例えば上記モジュールをインストールしてexampleを実行するとき、README通りの以下の手順ならうまくいくのですが <sup><a href="#fn-1" id="fnref-1">2</a></sup>:</p>
-<div class="code-frame" data-lang="bash" data-sourcepos="33:1-45:3"><div class="highlight"><pre><code><span class="nv">$ </span>git clone https://github.com/funatsufumiya/v_mytestlib ~/.vmodules/mytestlib
+<div class="code-frame" data-lang="bash" data-sourcepos="33:1-45:3"><div class="highlight"><pre><code><span class="nv">$ </span>git clone https://github.com/ffunatsu/v_mytestlib ~/.vmodules/mytestlib
 
 <span class="nv">$ </span>v run ~/.vmodules/mytestlib/example/main.v
 
@@ -75,7 +75,7 @@
 <p data-sourcepos="85:1-85:292">v-analyzerは<a href="https://qiita.com/funatsufumiya/items/4f2824d304f006d3a366">この記事</a>で最新版が正しくインストールされている前提です。そうでない場合はそもそも静的構文解析がうまくいきません。（私自身ここでハマりました… orz）</p>
 </div>
 </div>
-<p data-sourcepos="88:1-88:481">ではどうすればいいのだろうと試行錯誤して、<a href="https://github.com/rcqls/vdev" rel="nofollow noopener" target="_blank">vdev</a>というツール（<code>v -path</code>の改変ツール）を使ってみたり（<a href="https://github.com/funatsufumiya/vdev" rel="nofollow noopener" target="_blank">フォーク</a>してみたり）、シンボリックリンクを作ったりしたのですが、<del>結論からいうとうまくいきませんでした。</del> <strong>【追記】</strong> <code>ln -s ~/Documents/mylib ~/.vmodules/mylib</code> <strong>はOK</strong> でした。逆はダメでした。</p>
+<p data-sourcepos="88:1-88:481">ではどうすればいいのだろうと試行錯誤して、<a href="https://github.com/rcqls/vdev" rel="nofollow noopener" target="_blank">vdev</a>というツール（<code>v -path</code>の改変ツール）を使ってみたり（<a href="https://github.com/ffunatsu/vdev" rel="nofollow noopener" target="_blank">フォーク</a>してみたり）、シンボリックリンクを作ったりしたのですが、<del>結論からいうとうまくいきませんでした。</del> <strong>【追記】</strong> <code>ln -s ~/Documents/mylib ~/.vmodules/mylib</code> <strong>はOK</strong> でした。逆はダメでした。</p>
 <p data-sourcepos="90:1-90:316"><del>現時点では、冒頭の結論 (TL;DR) にあるように、モジュール内のexampleフォルダを <code>~/.vmodules</code> 以外の別フォルダにコピーして開発するしかないようです。（フォルダのシンボリックリンクでは、v-analyzer は正しく認識しませんでした。）</del></p>
 <p data-sourcepos="92:1-92:230"><code>~/.vmodules</code> 以下にモジュール自体は置いて、V言語やv-analyzerにモジュールを認識させつつ、VSCodeではコピーしたファイルの方を開いてexampleをデバッグするという感じです。</p>
 <p data-sourcepos="94:1-94:162"><a href="../../img/46_7.png" target="_blank" rel="nofollow noopener"><img src="../../img/46_7.png" alt="スクリーンショット 2025-09-23 15.42.02.png" loading="lazy"></a></p>

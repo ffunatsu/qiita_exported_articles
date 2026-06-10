@@ -22,7 +22,7 @@
 </iframe>
 </p>
 <p data-sourcepos="25:1-25:182">例えば、SSH (SCP) と連携するCustom Transfer Agentを作ると、単純なレンタルサーバーや社内サーバ (自鯖) をLFS置き場にすることができます。</p>
-<p data-sourcepos="27:1-27:413">やり方は<a href="https://github.com/funatsufumiya/git-lfs-agent-scp" rel="nofollow noopener" target="_blank">README</a>に書いている通りで、まず<a href="https://github.com/funatsufumiya/git-lfs-agent-scp/releases" rel="nofollow noopener" target="_blank">Releases</a>から実行ファイルの入ったzipをダウンロードし、中に入っている実行ファイルを <code>/usr/local/bin</code> や <code>C:¥Windows¥System32</code> に置きます。(パスさえ通っていればどこでも構いません。)</p>
+<p data-sourcepos="27:1-27:413">やり方は<a href="https://github.com/ffunatsu/git-lfs-agent-scp" rel="nofollow noopener" target="_blank">README</a>に書いている通りで、まず<a href="https://github.com/ffunatsu/git-lfs-agent-scp/releases" rel="nofollow noopener" target="_blank">Releases</a>から実行ファイルの入ったzipをダウンロードし、中に入っている実行ファイルを <code>/usr/local/bin</code> や <code>C:¥Windows¥System32</code> に置きます。(パスさえ通っていればどこでも構いません。)</p>
 <p data-sourcepos="29:1-29:93">そして自分のリポジトリの作業ディレクトリで、以下を実行します。</p>
 <div class="code-frame" data-lang="bash" data-sourcepos="31:1-35:3"><div class="highlight"><pre><code><span class="nv">$ </span>git config lfs.standalonetransferagent scp
 <span class="nv">$ </span>git config lfs.customtransfer.scp.path git-lfs-agent-scp

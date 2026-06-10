@@ -26,12 +26,12 @@ V言語では外部モジュールは基本的に `~/.vmodules` 上に置かれ�
 
 ### 検証
 
-https://github.com/funatsufumiya/v_mytestlib
+https://github.com/ffunatsu/v_mytestlib
 
 例えば上記モジュールをインストールしてexampleを実行するとき、README通りの以下の手順ならうまくいくのですが [^1]:
 
 ```bash
-$ git clone https://github.com/funatsufumiya/v_mytestlib ~/.vmodules/mytestlib
+$ git clone https://github.com/ffunatsu/v_mytestlib ~/.vmodules/mytestlib
 
 $ v run ~/.vmodules/mytestlib/example/main.v
 
@@ -85,7 +85,7 @@ $ v run example2/main.v
 v-analyzerは[この記事](https://qiita.com/funatsufumiya/items/4f2824d304f006d3a366)で最新版が正しくインストールされている前提です。そうでない場合はそもそも静的構文解析がうまくいきません。（私自身ここでハマりました… orz）
 :::
 
-ではどうすればいいのだろうと試行錯誤して、[vdev](https://github.com/rcqls/vdev)というツール（`v -path`の改変ツール）を使ってみたり（[フォーク](https://github.com/funatsufumiya/vdev)してみたり）、シンボリックリンクを作ったりしたのですが、~~結論からいうとうまくいきませんでした。~~ **【追記】** `ln -s ~/Documents/mylib ~/.vmodules/mylib` **はOK** でした。逆はダメでした。
+ではどうすればいいのだろうと試行錯誤して、[vdev](https://github.com/rcqls/vdev)というツール（`v -path`の改変ツール）を使ってみたり（[フォーク](https://github.com/ffunatsu/vdev)してみたり）、シンボリックリンクを作ったりしたのですが、~~結論からいうとうまくいきませんでした。~~ **【追記】** `ln -s ~/Documents/mylib ~/.vmodules/mylib` **はOK** でした。逆はダメでした。
 
 ~~現時点では、冒頭の結論 (TL;DR) にあるように、モジュール内のexampleフォルダを `~/.vmodules` 以外の別フォルダにコピーして開発するしかないようです。（フォルダのシンボリックリンクでは、v-analyzer は正しく認識しませんでした。）~~
 

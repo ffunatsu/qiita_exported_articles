@@ -4,7 +4,7 @@
 
 ゲームエンジン、とタイトルにつけようか迷ったけれど、[minimax](https://github.com/roman01la/minimax)という名前の通り、ミニマリスト的なフレームワークなので、ゲームフレームワークとタイトルにはつけた。[^3]
 
-ちなみに執筆時点の今現在では、本家はmacOSでしか動作確認が取られていなかったが、自分自身が動作確認と修正を行い、[こちらのフォーク](https://github.com/funatsufumiya/minimax/tree/for_pr)でWin/Mac/Linuxに対応させた。
+ちなみに執筆時点の今現在では、本家はmacOSでしか動作確認が取られていなかったが、自分自身が動作確認と修正を行い、[こちらのフォーク](https://github.com/ffunatsu/minimax/tree/for_pr)でWin/Mac/Linuxに対応させた。
 
 個人的にはこのフレームワークがクロスプラットフォーム対応になったのは、ちょっと夢のようであって、Clojureで使えて、かつOpenGLではなく（OpenGLにも対応しているが）それ以降のモダン描画APIに対応したクロスプラットフォームなゲームフレームワークというのは、自分自身がずっと待望していたものだった。
 
@@ -204,7 +204,7 @@ Clojureをネイティブ寄りで使おうというのはちょっと挑戦で�
 
 minimax自体は、GLTFが読み込めたり、PBRに対応していたり、UI表示に対応していたり、サウンドにも標準対応していたりと、minimaxといいながら結構至れり尽くせりな感じ。
 
-冒頭でも紹介したように、[自分のフォーク](https://github.com/funatsufumiya/minimax/tree/for_pr)によってWin/Mac/Linux対応が完了していて、そのうち本家にマージされたらいいなと感じているので、ぜひ試してもらえると嬉しい。
+冒頭でも紹介したように、[自分のフォーク](https://github.com/ffunatsu/minimax/tree/for_pr)によってWin/Mac/Linux対応が完了していて、そのうち本家にマージされたらいいなと感じているので、ぜひ試してもらえると嬉しい。
 
 ## ライセンスについて
 
@@ -218,4 +218,4 @@ minimax自体は、GLTFが読み込めたり、PBRに対応していたり、UI�
 
 [^4]: JavaScriptのオブジェクトとJSONが厳密には異なるのと同じく、ednはそのままイコールClojureのデータ型とは異なるが、ここではわかりやすさを優先した。
 
-[^a]: 【追記】後日談として、ここに書いていることは何も間違いではないのだけれど、検証を進めていくうちに、GC言語内で手動のメモリ管理をする辛さが理解されてきて、GDScriptなどの（準）参照カウンタベースの言語とはやはり根本的に違うというのは痛感しているところ。ZigやOdinやGoのような、deferなどがなく（追記: [あった](https://github.com/nijohando/deferable)）、参照カウントを使うにしてもある程度自作することになるのはちょっと大変そう（追記: これも一応[あった](https://github.com/cdeln/lexref-clj)）。ちなみにminimaxには、この辺を意識した [`mem/slet`](https://github.com/funatsufumiya/minimax/blob/808de37a302c42483fe95280a229de38f33e3b74/src/minimax/mem.clj#L16C11-L16C15) という使いやすいスタック・アローケータがあり、実際書いていくときはこのあたりを駆使していけば良いとは思う。同様の考え方で参照カウンタなどもすぐ実装できそうとは思う。
+[^a]: 【追記】後日談として、ここに書いていることは何も間違いではないのだけれど、検証を進めていくうちに、GC言語内で手動のメモリ管理をする辛さが理解されてきて、GDScriptなどの（準）参照カウンタベースの言語とはやはり根本的に違うというのは痛感しているところ。ZigやOdinやGoのような、deferなどがなく（追記: [あった](https://github.com/nijohando/deferable)）、参照カウントを使うにしてもある程度自作することになるのはちょっと大変そう（追記: これも一応[あった](https://github.com/cdeln/lexref-clj)）。ちなみにminimaxには、この辺を意識した [`mem/slet`](https://github.com/ffunatsu/minimax/blob/808de37a302c42483fe95280a229de38f33e3b74/src/minimax/mem.clj#L16C11-L16C15) という使いやすいスタック・アローケータがあり、実際書いていくときはこのあたりを駆使していけば良いとは思う。同様の考え方で参照カウンタなどもすぐ実装できそうとは思う。

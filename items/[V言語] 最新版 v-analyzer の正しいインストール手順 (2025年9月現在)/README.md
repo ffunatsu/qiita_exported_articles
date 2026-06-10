@@ -45,7 +45,7 @@ https://marketplace.visualstudio.com/items?itemName=VOSCA.vscode-v-analyzer
 
 古い方のv-analyzerはメンテされていないので、いろいろとバグがあったりするのですが、特に使っていて困っていたのはサブモジュールの扱いでした。
 
-https://github.com/funatsufumiya/v_mytestlib
+https://github.com/ffunatsu/v_mytestlib
 
 例としてこのモジュールをインストールしたあと、`~/.vmodule` 以外のどこかのリポジトリに適当に、
 

@@ -232,7 +232,7 @@ private static extern float add(float a, float b);
 
 雛形は以下に作った。
 
-https://github.com/funatsufumiya/rust_interop_lib
+https://github.com/ffunatsu/rust_interop_lib
 
 上記をユーザのプロジェクトフォルダにクローン (`git clone`) して、`cd rust_interop_lib; cargo build --release` すれば、`target\release\rust_interop_lib.dll` にdllが生成される。
 

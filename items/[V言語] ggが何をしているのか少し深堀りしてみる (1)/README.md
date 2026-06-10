@@ -22,11 +22,11 @@ https://qiita.com/funatsufumiya/items/4f2824d304f006d3a366
 
 ![スクリーンショット 2025-09-24 5.08.52.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/44103/e0dd1aea-48be-4a80-9752-8cec0c0ae01a.png)
 
-https://github.com/funatsufumiya/v-lab/blob/c579453b0ca0732a462c1fc1057588d07abf5d64/rectangles/main.v
+https://github.com/ffunatsu/v-lab/blob/c579453b0ca0732a462c1fc1057588d07abf5d64/rectangles/main.v
 
 ポイントは以下の箇所ですね。
 
-https://github.com/funatsufumiya/v-lab/blob/c579453b0ca0732a462c1fc1057588d07abf5d64/rectangles/main.v#L37-L43
+https://github.com/ffunatsu/v-lab/blob/c579453b0ca0732a462c1fc1057588d07abf5d64/rectangles/main.v#L37-L43
 
 `draw_rect_filled` が何をしているのか見てみましょう。
 
@@ -60,7 +60,7 @@ sgl.ortho(0.0, f32(sapp.width()), f32(sapp.height()), 0.0, -10000.0, 10000.0)
 
 ![スクリーンショット 2025-09-24 5.26.48.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/44103/c30685ab-58f4-46d4-8a9c-25f6d7c879bb.png)
 
-https://github.com/funatsufumiya/v-lab/blob/40fa4918c7a9462c86fa5beeb54e7dc645db45e5/triangle6/main.v
+https://github.com/ffunatsu/v-lab/blob/40fa4918c7a9462c86fa5beeb54e7dc645db45e5/triangle6/main.v
 
 ## パイプラインとブレンドモードについて
 

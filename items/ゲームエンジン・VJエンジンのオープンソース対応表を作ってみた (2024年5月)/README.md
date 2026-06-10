@@ -68,7 +68,7 @@ Godotについてはすでに多くの情報があることもあり、書くと
 
 #### "エディタレス" の意味合いについて
 
-個人的には、BevyとGodotをうまく今後連携して利用していければと思っていて、[bevy_godot4](https://github.com/funatsufumiya/bevy_godot4)の存在を念頭において、「一応相互利用可能」と表記しました。
+個人的には、BevyとGodotをうまく今後連携して利用していければと思っていて、[bevy_godot4](https://github.com/ffunatsu/bevy_godot4)の存在を念頭において、「一応相互利用可能」と表記しました。
 
 ただBevy界隈では、[Blender_bevy_components_workflow](https://github.com/kaosat-dev/Blender_bevy_components_workflow)を使ってBlender (GLTF)をエディタのように使ったり、[bevy_ecs_ldtk](https://github.com/Trouv/bevy_ecs_ldtk)を使って[LDTK](https://ldtk.io/)を利用したりすることの方が多いかなという印象で、Unityと連携している事例[^3]もありますが、他のゲームエンジンとの連携はこれからかなと思っています。
 

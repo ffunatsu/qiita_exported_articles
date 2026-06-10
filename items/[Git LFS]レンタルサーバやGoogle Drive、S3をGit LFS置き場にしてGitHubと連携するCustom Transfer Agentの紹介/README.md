@@ -20,11 +20,11 @@ Custom Transfer Agentというのは、Git LFS用のサーバを立てること�
 
 ## 運用例1: レンタルサーバーや自鯖をGit LFS置き場にする
 
-https://github.com/funatsufumiya/git-lfs-agent-scp
+https://github.com/ffunatsu/git-lfs-agent-scp
 
 例えば、SSH (SCP) と連携するCustom Transfer Agentを作ると、単純なレンタルサーバーや社内サーバ (自鯖) をLFS置き場にすることができます。
 
-やり方は[README](https://github.com/funatsufumiya/git-lfs-agent-scp)に書いている通りで、まず[Releases](https://github.com/funatsufumiya/git-lfs-agent-scp/releases)から実行ファイルの入ったzipをダウンロードし、中に入っている実行ファイルを `/usr/local/bin` や `C:¥Windows¥System32` に置きます。(パスさえ通っていればどこでも構いません。)
+やり方は[README](https://github.com/ffunatsu/git-lfs-agent-scp)に書いている通りで、まず[Releases](https://github.com/ffunatsu/git-lfs-agent-scp/releases)から実行ファイルの入ったzipをダウンロードし、中に入っている実行ファイルを `/usr/local/bin` や `C:¥Windows¥System32` に置きます。(パスさえ通っていればどこでも構いません。)
 
 そして自分のリポジトリの作業ディレクトリで、以下を実行します。
 
@@ -46,7 +46,7 @@ $ git config lfs.customtransfer.scp.args myserver:/path/to/any/folder
 
 ## 運用例2: Google DriveやS3をGit LFS置き場にする
 
-https://github.com/funatsufumiya/git-lfs-agent-rclone
+https://github.com/ffunatsu/git-lfs-agent-rclone
 
 さっきの応用例で、こちらはscpの代わりにrcloneを使うようにしたバージョンです。使い方は先程と全く同じで、rcloneでGoogle DriveやS3、One Driveなど好きなクラウドストレージをセッティングしておき、 `myserver:/path/to/any/folder` のように指定するだけです。
 
