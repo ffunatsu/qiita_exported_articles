@@ -9,11 +9,3 @@ Qiitaの `@funatsufumiya` アカウント閉鎖に伴うバックアップです
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
 
 Copyright (c) 2025 Fumiya Funatsu
-
----
-
-## 補足（アカウント閉鎖の経緯）
-
-No-AI活動の一環としてアカウントを閉鎖したものです。
-
-AI学習への利用は禁止します。
